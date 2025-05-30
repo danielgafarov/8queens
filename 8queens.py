@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
 import random
+import sys
 
 def attacking(queen1_col, queen1_row, queen2_col, queen2_row):
     if(queen1_row == queen2_row or queen1_row + (queen2_col-queen1_col) == queen2_row or queen1_row - (queen2_col-queen1_col) == queen2_row or queen1_col == queen2_col):
@@ -168,7 +164,6 @@ def add_inferences_to_assignment(inferences,assignment):
     for result in inferences:
         assignment.insert(result[0],result[1])
         
-
 def backtrack(assignment, csp, results):
     if check_assignment_complete(assignment, csp):
         results.append(dict(assignment))
@@ -196,17 +191,16 @@ def backtracking_search(csp):
         print("Solution " + str(solution_number))
         solution_number += 1
         queens_problem.print_board(list(result.values()))
-        #print(result)
-    #print("Number of Solutions found: " + str(len(results)))
+    print("Number of Solutions found: " + str(len(results)))
 
-        
-#ga_queens = queens_problem(create_population(1000), genetic_algorithm)
-#ga_queens.solve()
-x = [1,2,3,4,5,6,7,8]
-domains = {}
-for var in x:
-    domains[var] = [1,2,3,4,5,6,7,8]
-queens = csp(x,domains,consistent)
-backtrack_queens = queens_problem(queens,backtracking_search)
-backtrack_queens.solve()
-#print(backtracking_search(queens))
+if sys.argv[1] == 'true':
+    ga_queens = queens_problem(create_population(1000), genetic_algorithm)
+    ga_queens.solve()
+else:
+    x = [1,2,3,4,5,6,7,8]
+    domains = {}
+    for var in x:
+        domains[var] = [1,2,3,4,5,6,7,8]
+    queens = csp(x,domains,consistent)
+    backtrack_queens = queens_problem(queens,backtracking_search)
+    backtrack_queens.solve()
