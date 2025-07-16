@@ -1,5 +1,5 @@
 # Damenproblem
-[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/danielgafarov/8queens/blob/main/README.md)
+[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/danielgafarov/8queens)
 
 Das Ziel des Damenproblems ist es acht Damen auf einem 8x8 Schachbrett zu platzieren, so dass keine Damen sich gegenseitig angreifen. Das bedeutet, dass keine Damen in der gleichen Reihe, Spalte or Diagonalen sein dürfen. Es gibt ingesamt 92 Lösungen für dieses Problem.
 ### Algroithmus Eins: Genetischer Algorithmus
