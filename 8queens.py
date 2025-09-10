@@ -107,10 +107,11 @@ def genetic_algorithm(population):
         population = queens_problem.new_generation(population)
         
         fittest = fittest_individual(population)
-        print(str(iteration) + ". Generation: " + str(fittest_individual(population)))
+        print(str(iteration) + ". Generation: ")
         queens_problem.print_board(fittest[0])
-        print("Number of attacking queens for every queen")
+        print("Number of attacking queens for every queen:")
         queens_problem.print_heuristic(fittest[0])
+        print()
         iteration += 1
     return(fittest_individual(population))
 
@@ -191,9 +192,10 @@ def backtracking_search(csp):
         print("Solution " + str(solution_number))
         solution_number += 1
         queens_problem.print_board(list(result.values()))
+        print()
     print("Number of Solutions found: " + str(len(results)))
 
-if sys.argv[1] == 'true':
+if len(sys.argv) > 1 and sys.argv[1] == "true":
     ga_queens = queens_problem(create_population(1000), genetic_algorithm)
     ga_queens.solve()
 else:
