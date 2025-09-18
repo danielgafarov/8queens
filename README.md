@@ -5,5 +5,5 @@ The goal of the Eight Queens Problem is to place eight queens on an 8x8 chessboa
 ### Algorithm One: Genetic Algorithm
 This approach mimics nature and how organisms inherit their genes to their offspring. This algroithm has more of an educational purpose since it only yields one solution and in the worst case it doesn't find any solution at all. Because genetics involve a lot of randomness the run time for this algorithm fluctuates heavily.
 ### Algorithm Two: Backtracking Search
-A Backtacking Algorithm builds possible solutions using a tree-like system. Once it recognizes that a branch of this tree cannot create any solutions because all of them share the same flaws it dismisses this branch and starts looking into another branch of possible solutions. This algorithm finds all solutions and always takes the same amount of time.
+A Backtracking Algorithm builds possible solutions using a tree-like system. Once it recognizes that a branch of this tree cannot create any solutions because all of them share the same flaws it dismisses this branch and starts looking into another branch of possible solutions. This algorithm finds all solutions and always takes the same amount of time.
 
