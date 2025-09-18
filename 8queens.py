@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import random
 import sys
 
@@ -205,4 +204,5 @@ else:
         domains[var] = [1,2,3,4,5,6,7,8]
     queens = csp(x,domains,consistent)
     backtrack_queens = queens_problem(queens,backtracking_search)
+
     backtrack_queens.solve()
