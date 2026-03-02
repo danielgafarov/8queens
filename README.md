@@ -1,5 +1,5 @@
 # The 8 Queens Problem
-[![de](https://img.shields.io/badge/lang-de-blue.svg)](README.de.md)
+[![de](https://img.shields.io/badge/lang-de-blue.svg)](https://github.com/danielgafarov/8queens/blob/main/README-de.md)
 
 The goal of the **8 Queens Problem** is to place eight queens on an 8x8 chessboard such that no two queens threaten each other. This means no two queens may share the same row, column, or diagonal. There are a total of **92 distinct solutions** to this problem.
 
